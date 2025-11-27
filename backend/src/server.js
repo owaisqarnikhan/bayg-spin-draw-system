@@ -1,3 +1,4 @@
+// BAYG Spin Draw System Backend
 const express = require('express');
 const http = require('http');
 const { Server } = require('socket.io');
@@ -37,10 +38,7 @@ app.get('/', (req, res) => {
 
 // Socket.io connection
 io.on('connection', (socket) => {
-  console.log('A user connected:', socket.id);
-
   socket.on('disconnect', () => {
-    console.log('User disconnected:', socket.id);
   });
 });
 

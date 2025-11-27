@@ -47,6 +47,16 @@ next-env.d.ts
 backend/prisma/dev.db
 backend/prisma/dev.db-journal
 backend/prisma/migrations/**/migration.sql~
+backend/dev.db
+backend/dev.db-journal
+
+# Uploads
+backend/uploads/
+uploads/
+
+# Test Files
+test_employees.csv
+sample_employees.csv
 
 # IDEs
 .vscode/

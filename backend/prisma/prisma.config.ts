@@ -1,9 +1,14 @@
 // @ts-ignore
-export default {
-    datasources: {
-        db: {
-            // @ts-ignore
-            url: process.env.DATABASE_URL || 'postgresql://localhost:5432/bayg_db?schema=public'
-        }
-    }
-};
+import "dotenv/config";
+// @ts-ignore
+import { defineConfig, env } from "prisma/config";
+
+export default defineConfig({
+    schema: "schema.prisma",
+    migrations: {
+        path: "migrations",
+    },
+    datasource: {
+        url: env("DATABASE_URL") || 'file:./dev.db',
+    },
+});
