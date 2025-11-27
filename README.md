@@ -1,9 +1,3 @@
-# 🎯 BAYG Spin Draw System
-
-A professional lucky draw system for the Bahrain Asian Youth Games 2025, featuring real-time spinning animations, admin dashboard, and live preview display.
-
-## 🌟 Features
-
 ### Admin Dashboard (`/admin`)
 - ✅ **Download CSV Template** - Get Excel-compatible template with tokenNumber and name
 - ✅ **Upload CSV** - Import employee data from filled template
